@@ -1,0 +1,28 @@
+.avatar
+{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 8px;
+}
+
+.avatarIsOnline
+{
+    /*box-sizing: initial; faz com que quando se cria border, padding, margin, outline em um elemento, 
+    ocupa um espaço a mais em vez de reduzir o elemento (caso nao tivesse feito o calculo abaixo e deixado apenas 3rem)*/
+    width: calc(3rem + 12px); /*12px (seria a borda [4px] x 4 = 12 [conta todos os 4 lados]*/
+    height: calc(3rem + 12px);
+    border-radius: 8px;
+    border: 4px solid var(--gray-800);
+    outline: 2px solid var(--green-online);
+}
+
+.avatarIsAway
+{
+    /*box-sizing: initial; faz com que quando se cria border, padding, margin, outline em um elemento, 
+    ocupa um espaço a mais em vez de reduzir o elemento (caso nao tivesse feito o calculo abaixo e deixado apenas 3rem)*/
+    width: calc(3rem + 12px); /*12px (seria a borda [4px] x 4 = 12 [conta todos os 4 lados]*/
+    height: calc(3rem + 12px);
+    border-radius: 8px;
+    border: 4px solid var(--gray-800);
+    outline: 2px solid var(--yellow-away);
+}

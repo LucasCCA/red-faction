@@ -1,0 +1,71 @@
+.sidebar
+{
+    background: var(--gray-post);
+    border-radius: 8px;
+    overflow: hidden; /*faz com que o canto da imagem fique arredondado junto com o container da imagem sendo arredondada 
+    e os elementos dentro so vao ocupar o tamanho da sidebar, escondemos tudo que sai do container*/
+}
+
+.cover
+{
+    width: 100%;
+    height: 72px;
+    object-fit: cover; /*mostra o centro da imagem e corta o resto, sem distorcer*/
+}
+
+.profile
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: calc(0px - 1.5rem - 6px); /*1.5rem que eh a metade de 3rem (do width e height) e 6px (metade de 12px)
+    inicia com o 0px para ficar negativo*/
+}
+
+.profile strong
+{
+    margin-top: 1rem;
+    color: var(--gray-100);
+    line-height: 1.6; /*ou 160%*/
+}
+
+.profile span
+{
+    font-size: 0.875rem;
+    color: var(--gray-400);
+}
+
+.sidebar footer
+{
+    border-top: 1px solid var(--gray-700);
+    margin-top: 1.5rem;
+    padding: 1.5rem 2rem 2rem;
+}
+
+.sidebar footer a
+{   
+    background: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 8px;
+    height: 50px;
+    padding: 0 1.5rem;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.3rem;
+
+    transition: color 0.1s, background-color 0.1s;
+}
+
+.sidebar footer a:hover
+{
+    background: var(--white);
+    color: var(--gray-post);
+}

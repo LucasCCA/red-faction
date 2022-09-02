@@ -1,0 +1,25 @@
+.wrapper
+{
+    max-width: 70rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+
+    display: grid;
+    grid-template-columns: 256px 1fr; /*fr é o que usa no grid pra dizer que vai ter um tamanho flexivel*/
+    gap: 2rem;
+    align-items: flex-start; /*padrao seria stretch e iria esticar a sidebar pro mesmo tamanho do post, 
+    dessa forma mantemos o tamanho e mandamos tudo pro topo da pagina*/
+}
+
+@media (max-width: 768px)
+{
+    html
+    {
+        font-size: 87.5% /*14px, mas nao é legal colocar o valor bruto para nao causar problemas*/
+    }
+
+    .wrapper
+    {
+        grid-template-columns: 1fr;;
+    }
+}
