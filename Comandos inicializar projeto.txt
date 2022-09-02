@@ -1,0 +1,14 @@
+--------PowerShell
+mkdir nomeDaPasta (para criar uma pasta no caminho selecionado)
+cd nomeDaPasta (entrar na pasta)
+npm create vite@latest (criar projeto com vite)
+escolher nome do projeto
+escolher framework (react no caso do curso)
+escolher variante (react no caso do curso)
+cd nomeDoProjeto
+ls (ver o conteudo)
+code . (abrir o editor)
+
+--------VSCode
+npm install
+npm run dev
